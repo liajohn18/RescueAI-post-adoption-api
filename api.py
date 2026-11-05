@@ -1,3 +1,4 @@
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import json
 import logging
@@ -14,6 +15,8 @@ from post_adoption_rag.answer_prompt import (
     has_foreign_language_markers,
 )
 from post_adoption_rag.hybrid_search import HybridSectionSearch
+from escalation import assess_and_escalate
+from escalation.router import router as escalation_router
 
 
 ROOT = Path(__file__).resolve().parent
@@ -45,6 +48,7 @@ app.add_middleware(
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
+app.include_router(escalation_router)
 
 
 class Question(BaseModel):
@@ -172,8 +176,8 @@ def health():
     return {"status": "ok"}
 
 
-@app.post("/api/ask")
-def ask(body: Question):
+def answer_question(body: Question) -> dict:
+    """Answer from the adoption guide (RAG). Called by /api/ask below."""
     question = body.question.strip()
     if not question:
         raise HTTPException(status_code=400, detail="Please enter a question.")
@@ -340,3 +344,28 @@ def ask(body: Question):
             for passage in [passage]
         ],
     }
+
+
+# Escalation runs in parallel with the RAG answer, so it adds little latency.
+_escalation_pool = ThreadPoolExecutor(max_workers=4)
+
+
+@app.post("/api/ask")
+def ask(body: Question):
+    """Answer from the guide and decide if a volunteer must step in."""
+    escalation_future = _escalation_pool.submit(assess_and_escalate, body.question)
+    try:
+        result = answer_question(body)
+    except HTTPException as exc:
+        escalation = escalation_future.result()
+        # An urgent case must still reach a volunteer when the RAG answer fails.
+        if exc.status_code >= 500 and escalation.get("escalated"):
+            answer = (
+                "The chatbot cannot answer right now, but a volunteer has been alerted."
+                if detect_language(body.question) == "English"
+                else "De chatbot kan nu niet antwoorden, maar een vrijwilliger is gewaarschuwd."
+            )
+            return {"answer": answer, "sources": [], "escalation": escalation}
+        raise
+    result["escalation"] = escalation_future.result()
+    return result
