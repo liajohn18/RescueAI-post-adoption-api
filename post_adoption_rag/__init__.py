@@ -1,0 +1,1 @@
+"""Post-adoption document retrieval component for Rescue AI."""

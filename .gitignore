@@ -1,0 +1,6 @@
+.venv/
+.model_cache/
+__pycache__/
+*.py[cod]
+.env
+post_adoption_rag/api_evaluation_results.json

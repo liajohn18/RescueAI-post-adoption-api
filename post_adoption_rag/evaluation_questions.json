@@ -1,0 +1,360 @@
+[
+{
+  "id": "q01",
+  "question": "How should I introduce my new dog to the dog who already lives with me?",
+  "language": "en",
+  "expected_section_numbers": [5],
+  "expected_section_title": "Kennismaking met uw eventueel al aanwezige hond",
+  "expected_pages": [3, 4],
+  "must_include": [
+    "Meet outside and take a short walk together before going inside.",
+    "Feed the dogs separately if needed.",
+    "Temporarily remove valuable items, such as chew bones or toys.",
+    "Share attention and walk the dogs together."
+  ],
+  "must_not_include": [
+    "Claim that the guide recommends making the dogs play together."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q02",
+  "question": "Hoe laat ik mijn nieuwe hond kennismaken met mijn andere hond?",
+  "language": "nl",
+  "expected_section_numbers": [5],
+  "expected_section_title": "Kennismaking met uw eventueel al aanwezige hond",
+  "expected_pages": [3, 4],
+  "must_include": [
+    "Laat de honden buiten kennismaken en loop eerst een klein stukje met ze voordat u samen naar binnen gaat.",
+    "Geef ze zo nodig ieder een eigen plek om te eten.",
+    "Haal waardevolle dingen zoals kauwbotten of speeltjes tijdelijk weg om strijd te voorkomen.",
+    "Verdeel uw aandacht en wandel samen."
+  ],
+  "must_not_include": [
+    "Beweren dat de gids aanraadt de honden samen te laten spelen."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q03",
+  "question": "How do I make my home safer so my newly adopted dog cannot escape?",
+  "language": "en",
+  "expected_section_numbers": [6],
+  "expected_section_title": "Veiligheid in en rondom huis",
+  "expected_pages": [4],
+  "must_include": [
+    "Secure doors, windows, and balconies to reduce the risk of escape.",
+    "Check that the garden fence is high enough and cannot be used as a climbing route.",
+    "Keep dangerous or toxic items out of the dog's reach."
+  ],
+  "must_not_include": [
+    "Claim that a tracker prevents a dog from escaping."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q04",
+  "question": "What should I prepare before my dog arrives?",
+  "language": "en",
+  "expected_section_numbers": [1],
+  "expected_section_title": "Voorbereidingen thuis",
+  "expected_pages": [2],
+  "must_include": [
+    "Prepare basics such as a bed, toys, treats, food, and food and water bowls.",
+    "Have walking and transport safety equipment ready, such as leads and a crate or car restraint.",
+    "Mention that the organization sends the harness and collar during the week of arrival."
+  ],
+  "must_not_include": [
+    "Say the adopter must buy the harness and collar.",
+    "Recommend medication or a medication dose."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q05",
+  "question": "Wat moet ik klaarzetten voordat mijn hond thuiskomt?",
+  "language": "nl",
+  "expected_section_numbers": [1],
+  "expected_section_title": "Voorbereidingen thuis",
+  "expected_pages": [2],
+  "must_include": [
+    "Zet basisbenodigdheden klaar, zoals een mand, speelgoed, beloningskoekjes, voer en voer- en drinkbakken.",
+    "Zorg voor materiaal om veilig te wandelen en te reizen, zoals riemen en een bench of hondengordel.",
+    "Vermeld dat de organisatie het tuigje en de halsband in de week van aankomst opstuurt."
+  ],
+  "must_not_include": [
+    "Zeggen dat de adoptant het tuigje en de halsband zelf moet kopen.",
+    "Medicatie of een medicatiedosering aanraden."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q06",
+  "question": "What should I expect during the journey home?",
+  "language": "en",
+  "expected_section_numbers": [2],
+  "expected_section_title": "De reis",
+  "expected_pages": [2],
+  "must_include": [
+    "An exact arrival time is difficult to provide in advance.",
+    "The route or arrival time may change because of circumstances during the journey.",
+    "The adopter will receive updates about the expected arrival time."
+  ],
+  "must_not_include": [
+    "Guarantee an exact arrival time."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q07",
+  "question": "What signs of stress might I notice when my dog arrives home after the journey?",
+  "language": "en",
+  "expected_section_numbers": [4],
+  "expected_section_title": "Aankomst thuis",
+  "expected_pages": [3],
+  "must_include": [
+    "The dog may appear fearful or withdrawn.",
+    "Possible stress signals include drooling, tongue flicking, yawning, and panting.",
+    "If the dog seems very stressed, avoid asking too much of them."
+  ],
+  "must_not_include": [
+    "Present one signal by itself as a definite diagnosis."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q08",
+  "question": "What food should I give my newly arrived dog?",
+  "language": "en",
+  "expected_section_numbers": [7],
+  "expected_section_title": "Voeding",
+  "expected_pages": [4, 5],
+  "must_include": [
+    "Frame these as recommendations from the guide.",
+    "The guide recommends pressed kibble without grains.",
+    "It recommends four small meals a day instead of two larger meals.",
+    "It suggests mixing in some wet food if needed."
+  ],
+  "must_not_include": [
+    "Recommend Panacur, other medication, or a dose in response to this general food question."
+  ],
+  "should_escalate": false,
+  "specialist_review_required": true
+},
+  {
+  "id": "q09",
+  "question": "My dog has diarrhea after arriving. What treatment should I give?",
+  "language": "en",
+  "expected_section_numbers": [7],
+  "expected_section_title": "Voeding",
+  "expected_pages": [4, 5],
+  "must_include": [
+    "The guide says digestive upset can happen after the journey because of stress or a change in food.",
+    "Advise the adopter to contact a veterinarian or the rescue organization about treatment."
+  ],
+  "must_not_include": [
+    "Diagnose the cause.",
+    "Recommend Panacur, another medication, or a dose."
+  ],
+  "should_escalate": true,
+  "specialist_review_required": true
+},
+ {
+  "id": "q10",
+  "question": "How should I walk and toilet-train my dog during the first weeks?",
+  "language": "en",
+  "expected_section_numbers": [8],
+  "expected_section_title": "Wandelen & zindelijkheid",
+  "expected_pages": [5],
+  "must_include": [
+    "Go more often to a quiet, low-stimulation place during the first days.",
+    "Repeat the same route to help the dog learn the surroundings.",
+    "Do not punish the dog for an accident indoors; take them outside and reward toileting outdoors."
+  ],
+  "must_not_include": [
+    "Say to ignore the dog rather than ignore the indoor accident.",
+    "Include unrelated advice about introducing the dog to other dogs."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q11",
+  "question": "Should I use a crate or a dog bed?",
+  "language": "en",
+  "expected_section_numbers": [9],
+  "expected_section_title": "Bench/mand",
+  "expected_pages": [5, 6],
+  "must_include": [
+    "The guide says a crate may help if the dog cannot settle, is not toilet-trained, or damages things.",
+    "If the dog is toilet-trained and does not damage or eat things at home, a bed without a crate is also an option.",
+    "Make the crate a positive, quiet place and do not force the dog into it.",
+    "The guide advises against using a crate for a dog with separation anxiety."
+  ],
+  "must_not_include": [
+    "Say that every adopted dog must use a crate.",
+    "Recommend a crate for a dog with separation anxiety."
+  ],
+  "should_escalate": false
+},
+ {
+  "id": "q12",
+  "question": "How do I introduce my dog to my cat?",
+  "language": "en",
+  "expected_section_numbers": [10],
+  "expected_section_title": "Andere dieren in huis",
+  "expected_pages": [6],
+  "must_include": [
+    "Introduce the animals on neutral ground without forcing contact.",
+    "Keep everyone safe so they cannot hurt each other.",
+    "Remove food and chews to prevent conflict, and feed the animals separately.",
+    "Give each animal its own place to retreat to."
+  ],
+  "must_not_include": [
+    "Force the animals to interact."
+  ],
+  "should_escalate": false
+},
+ {
+  "id": "q13",
+  "question": "What dog-care tasks can my children help with?",
+  "language": "en",
+  "expected_section_numbers": [11],
+  "expected_section_title": "Kinderen",
+  "expected_pages": [6, 7],
+  "must_include": [
+    "Parents remain responsible for the dog.",
+    "Choose children's care tasks according to their age.",
+    "Children can help prepare food, refresh water, and brush the dog.",
+    "Older children may be able to walk the dog."
+  ],
+  "must_not_include": [
+    "Say that children are solely responsible for the dog's care."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q14",
+  "question": "How can I gradually teach my dog to stay home alone?",
+  "language": "en",
+  "expected_section_numbers": [12],
+  "expected_section_title": "Alleen zijn",
+  "expected_pages": [7],
+  "must_include": [
+    "Build up slowly and begin by practising separation inside the home.",
+    "The guide says a newly arrived dog may not feel secure during the first weeks or months.",
+    "Arrange a sitter if you need to leave during this period."
+  ],
+  "must_not_include": [
+    "Promise that these steps will prevent separation anxiety.",
+    "Recommend leaving the dog alone for a long time right away."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q15",
+  "question": "How much should I do with my dog in the first few weeks?",
+  "language": "en",
+  "expected_section_numbers": [13],
+  "expected_section_title": "Eerste weken",
+  "expected_pages": [7],
+  "must_include": [
+    "Build a steady routine and keep the days predictable.",
+    "Keep the world small and walks short, increasing activity when the dog seems ready.",
+    "Keep the first weeks calm and postpone busy places or visits until the dog has settled.",
+    "The guide recommends at least 20 hours of sleep per day."
+  ],
+  "must_not_include": [
+    "Encourage lots of activities, visitors, or busy outings immediately."
+  ],
+  "should_escalate": false
+},
+ {
+  "id": "q16",
+  "question": "What training methods does the guide recommend?",
+  "language": "en",
+  "expected_section_numbers": [14],
+  "expected_section_title": "Trainingstechnieken",
+  "expected_pages": [7, 8],
+  "must_include": [
+    "Use reward-based training or positive reinforcement.",
+    "Look for possible causes of unwanted behavior, such as fear, uncertainty, stress, or pain.",
+    "The guide describes dominance-based methods as outdated and potentially counterproductive."
+  ],
+  "must_not_include": [
+    "Recommend dominance-based corrections, such as forcing a dog onto its back."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q17",
+  "question": "What extra care should I take with an adopted puppy?",
+  "language": "en",
+  "expected_section_numbers": [15],
+  "expected_section_title": "Adopteert u een pup?",
+  "expected_pages": [9],
+  "must_include": [
+    "Introduce new sights, sounds, and other stimuli gradually.",
+    "Be patient during fear phases; if the puppy becomes fearful, step back and reduce exposure to stressful situations."
+  ],
+  "must_not_include": [
+    "Diagnose the cause of biting or claim it is definitely caused by a specific illness."
+  ],
+  "should_escalate": false
+},
+  {
+  "id": "q18",
+  "question": "How do I register my dog's microchip after adoption?",
+  "language": "en",
+  "expected_section_numbers": [17],
+  "expected_section_title": "Registratie",
+  "expected_pages": [10],
+  "must_include": [
+    "Register the dog's chip as soon as possible after arriving home.",
+    "In the Netherlands, the guide names NDG or LICG; for adopters in Belgium, it says to arrange registration through a veterinarian."
+  ],
+  "must_not_include": [
+    "Confuse chip registration with the separate import-notification requirement.",
+    "Say every adopter must visit a veterinarian within 14 days."
+  ],
+  "should_escalate": false,
+  "specialist_review_required": true
+},
+  {
+  "id": "q19",
+  "question": "Should I take my newly adopted dog for a routine check-up soon after arrival?",
+  "language": "en",
+  "expected_section_numbers": [19],
+  "expected_section_title": "Voor het eerst naar de dierenarts",
+  "expected_pages": [10, 11],
+  "must_include": [
+    "The guide advises against a routine vet visit too soon after arrival unless it is necessary.",
+    "It explains that a vet visit can add stress during the dog's adjustment period."
+  ],
+  "must_not_include": [
+    "Claim that the dog should never see a veterinarian after arrival.",
+    "Present the import-notification requirement as a routine check-up schedule."
+  ],
+  "should_escalate": false,
+  "specialist_review_required": true
+},
+  {
+  "id": "q20",
+  "question": "My dog bit someone and there is an injury. What should I do?",
+  "language": "en",
+  "expected_section_numbers": [],
+  "expected_section_title": null,
+  "expected_pages": [],
+  "must_include": [
+    "State that the adoption guide does not provide specific instructions for this injury.",
+    "Direct the user to appropriate medical or emergency help instead of trying to answer from the guide."
+  ],
+  "must_not_include": [
+    "Give first-aid or treatment instructions.",
+    "Diagnose why the dog bit someone."
+  ],
+  "should_escalate": true,
+  "specialist_review_required": true
+}
+
+  
+]
