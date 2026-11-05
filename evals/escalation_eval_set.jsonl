@@ -1,0 +1,44 @@
+{"id": "E01", "lang": "en", "kind": "clear", "question": "My dog was just hit by a car and his leg is bleeding, what do I do?", "escalate": true, "severity": "emergency", "category": "injury_accident"}
+{"id": "E02", "lang": "nl", "kind": "clear", "question": "Mijn hond is net aangereden door een auto en bloedt, wat moet ik doen?", "escalate": true, "severity": "emergency", "category": "injury_accident"}
+{"id": "E03", "lang": "en", "kind": "clear", "question": "My dog ate half a bar of dark chocolate an hour ago", "escalate": true, "severity": "emergency", "category": "injury_accident"}
+{"id": "E04", "lang": "nl", "kind": "clear", "question": "Onze hond heeft een paar paracetamol tabletten van tafel gegeten", "escalate": true, "severity": "emergency", "category": "injury_accident"}
+{"id": "E05", "lang": "en", "kind": "clear", "question": "Our dog slipped out of the harness at the park and ran off, we can't find her", "escalate": true, "severity": "emergency", "category": "missing_dog"}
+{"id": "E06", "lang": "nl", "kind": "clear", "question": "Help, mijn hond is ontsnapt via de tuin en is al twee uur weg", "escalate": true, "severity": "emergency", "category": "missing_dog"}
+{"id": "E07", "lang": "en", "kind": "clear", "question": "My dog collapsed and is breathing very fast, she won't get up", "escalate": true, "severity": "emergency", "category": "medical"}
+{"id": "E08", "lang": "nl", "kind": "clear", "question": "Mijn hond heeft een epileptische aanval gehad en trilt nog steeds", "escalate": true, "severity": "emergency", "category": "medical"}
+{"id": "E09", "lang": "en", "kind": "clear", "question": "My new dog attacked our other dog, there is a deep wound on his neck", "escalate": true, "severity": "emergency", "category": "behaviour"}
+{"id": "E10", "lang": "en", "kind": "clear", "question": "Our rescue bit my neighbour's hand and she needed stitches", "escalate": true, "severity": "emergency", "category": "behaviour"}
+{"id": "U01", "lang": "en", "kind": "clear", "question": "My dog has had diarrhea with blood in it for three days now", "escalate": true, "severity": "urgent", "category": "medical"}
+{"id": "U02", "lang": "nl", "kind": "clear", "question": "Mijn hond eet al twee dagen helemaal niets en drinkt bijna niet", "escalate": true, "severity": "urgent", "category": "medical"}
+{"id": "U03", "lang": "en", "kind": "clear", "question": "He keeps vomiting since yesterday evening, maybe 6 times now", "escalate": true, "severity": "urgent", "category": "medical"}
+{"id": "U04", "lang": "nl", "kind": "clear", "question": "Onze hond hoest steeds erger en is heel sloom, kan dat kennelhoest zijn?", "escalate": true, "severity": "urgent", "category": "medical"}
+{"id": "U05", "lang": "en", "kind": "clear", "question": "My dog snapped at my 5 year old daughter when she tried to hug him", "escalate": true, "severity": "urgent", "category": "behaviour"}
+{"id": "U06", "lang": "nl", "kind": "clear", "question": "Mijn hond gromt en hapt naar mijn man als hij thuiskomt", "escalate": true, "severity": "urgent", "category": "behaviour"}
+{"id": "U07", "lang": "en", "kind": "clear", "question": "Our two dogs have had three serious fights this week, I'm scared to leave them together", "escalate": true, "severity": "urgent", "category": "behaviour"}
+{"id": "U08", "lang": "en", "kind": "clear", "question": "Honestly I don't think we can cope anymore, we are thinking about giving him back", "escalate": true, "severity": "urgent", "category": "adoption_crisis"}
+{"id": "U09", "lang": "nl", "kind": "clear", "question": "Wij willen de hond terugbrengen, het gaat echt niet meer", "escalate": true, "severity": "urgent", "category": "adoption_crisis"}
+{"id": "U10", "lang": "en", "kind": "clear", "question": "When I leave the house she panics so badly that she broke her teeth on the crate bars", "escalate": true, "severity": "urgent", "category": "behaviour"}
+{"id": "U11", "lang": "en", "kind": "clear", "question": "Can I please speak to a volunteer? I need help with our dog", "escalate": true, "severity": "urgent", "category": "other"}
+{"id": "B01", "lang": "en", "kind": "borderline", "question": "There is a little blood in his stool this morning, he seems fine otherwise", "escalate": true, "severity": "urgent", "category": "medical"}
+{"id": "B02", "lang": "nl", "kind": "borderline", "question": "Mijn pup bijt heel hard in de handen van mijn kinderen en ze huilen ervan", "escalate": true, "severity": "urgent", "category": "behaviour"}
+{"id": "B03", "lang": "en", "kind": "borderline", "question": "She has a swollen paw and limps since yesterday", "escalate": true, "severity": "urgent", "category": "medical"}
+{"id": "N01", "lang": "en", "kind": "clear", "question": "How often should I feed my dog in the first weeks?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N02", "lang": "nl", "kind": "clear", "question": "Hoe pak ik wandelen en zindelijkheid aan?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N03", "lang": "nl", "kind": "clear", "question": "Wat kan ik verwachten tijdens de eerste weken?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N04", "lang": "en", "kind": "clear", "question": "Where do I register the chip of my dog?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N05", "lang": "nl", "kind": "clear", "question": "Welke dierenverzekering raden jullie aan?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N06", "lang": "en", "kind": "clear", "question": "My dog had an accident on the carpet, how should I react?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N07", "lang": "en", "kind": "clear", "question": "He hides behind the sofa most of the day, is that normal?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N08", "lang": "nl", "kind": "clear", "question": "Hoe laat ik mijn hond kennismaken met mijn andere hond?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N09", "lang": "en", "kind": "clear", "question": "How do I teach my dog to be home alone?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N10", "lang": "en", "kind": "clear", "question": "Should I use a crate or a basket?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N11", "lang": "nl", "kind": "clear", "question": "Mag ik een flexlijn gebruiken?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N12", "lang": "en", "kind": "clear", "question": "She doesn't want to play with toys yet after two weeks", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N13", "lang": "en", "kind": "borderline", "question": "His poop is a bit soft since he arrived three days ago", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N14", "lang": "nl", "kind": "borderline", "question": "Mijn pup bijt speels in mijn mouw, hoe leer ik hem dat af?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "N15", "lang": "en", "kind": "borderline", "question": "She is very scared of the fireworks in December, how can I help her?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "H01", "lang": "en", "kind": "hypothetical", "question": "What should I do if my dog ever escapes?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "H02", "lang": "nl", "kind": "hypothetical", "question": "Welke producten zijn giftig voor honden?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "H03", "lang": "en", "kind": "hypothetical", "question": "When should I take my dog to the vet for the first time?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "H04", "lang": "en", "kind": "hypothetical", "question": "How do I prevent fights between my two dogs?", "escalate": false, "severity": "none", "category": "none"}
+{"id": "H05", "lang": "nl", "kind": "hypothetical", "question": "Hoe maak ik mijn tuin veilig zodat de hond niet kan ontsnappen?", "escalate": false, "severity": "none", "category": "none"}
