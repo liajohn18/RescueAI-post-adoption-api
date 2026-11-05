@@ -59,6 +59,15 @@ def predict_api(base_url: str):
     return run, f"api:{base_url}"
 
 
+def is_fatal(exc: Exception) -> bool:
+    """Errors that will fail every call (no credits, bad key, unknown model)."""
+    text = str(exc).lower()
+    return any(k in text for k in (
+        "insufficient_quota", "credit_balance", "invalid_api_key", "incorrect api key",
+        "model_not_found", "does not exist", "api_key client option must be set",
+    ))
+
+
 def score(rows: list[dict]) -> dict:
     tp = sum(r["escalate"] and r["pred"]["escalate"] for r in rows)
     fn = sum(r["escalate"] and not r["pred"]["escalate"] for r in rows)
@@ -97,13 +106,19 @@ def main() -> None:
 
     predict, target = predict_api(args.api) if args.api else predict_local()
     cases = load_cases()
-    rows, latencies = [], []
+    rows, latencies, errors = [], [], 0
     for c in cases:
         t0 = time.perf_counter()
         try:
             pred = predict(c["question"])
         except Exception as exc:  # count as "not escalated" so failures hurt recall
+            errors += 1
             pred = {"escalate": False, "severity": "none", "category": "none", "reason": f"ERROR {exc}"}
+            if is_fatal(exc):
+                raise SystemExit(
+                    f"\nStopped: the LLM call failed with a setup error, so no score is valid.\n{exc}\n"
+                    "Fix the key / credits / model name and run again."
+                )
         latencies.append(time.perf_counter() - t0)
         rows.append({**c, "pred": pred})
         mark = "OK " if pred["escalate"] == c["escalate"] else "XX "
@@ -118,14 +133,15 @@ def main() -> None:
     RESULTS.mkdir(exist_ok=True)
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     (RESULTS / f"{stamp}.json").write_text(
-        json.dumps({"target": target, "overall": overall, "by_lang": by_lang, "by_kind": by_kind,
+        json.dumps({"target": target, "errors": errors, "overall": overall, "by_lang": by_lang, "by_kind": by_kind,
                     "latency": lat, "rows": rows}, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
 
     md = [
         f"# Escalation eval — {stamp}",
-        f"Target: `{target}` · {overall['n']} labelled questions (NL + EN)",
+        f"Target: `{target}` · {overall['n']} labelled questions (NL + EN)"
+        + (f" · **{errors} calls failed — scores are not valid**" if errors else ""),
         "",
         "| Metric | Value |", "|---|---|",
         f"| **Recall (urgent+emergency caught)** | **{pct(overall['recall'])}** ({overall['tp']}/{overall['tp'] + overall['fn']}) |",
